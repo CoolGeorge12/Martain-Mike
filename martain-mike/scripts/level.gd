@@ -46,6 +46,7 @@ func _on_level_timer_timeout():
 		if time_left < 0:
 			reset_player()
 			time_left = level_time
+			hud.set_time_label(time_left)
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("quit"):

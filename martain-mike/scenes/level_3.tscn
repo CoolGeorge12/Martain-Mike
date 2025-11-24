@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://1t447taora54"]
+[gd_scene load_steps=15 format=3 uid="uid://1t447taora54"]
 
 [ext_resource type="Script" uid="uid://cy1qde8uici0j" path="res://scripts/level.gd" id="1_ha73p"]
 [ext_resource type="PackedScene" uid="uid://47qq4ypwyim2" path="res://scenes/player.tscn" id="1_hhfj6"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dmg34rrhvxw4q" path="res://scenes/exit.tscn" id="6_ax3dk"]
 [ext_resource type="Texture2D" uid="uid://bqdp4sagll1xp" path="res://assets/textures/Terrain (16x16).png" id="6_wae8j"]
 [ext_resource type="PackedScene" uid="uid://3bgvkpju2to8" path="res://scenes/deathzone.tscn" id="7_q2dsb"]
+[ext_resource type="PackedScene" uid="uid://dsnb22t7ian74" path="res://scenes/ui_layer.tscn" id="10_vcx5n"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_47enk"]
 tile_data = PackedInt32Array(0, 458752, 0, 65536, 458752, 1, 131072, 458752, 2, 1, 458752, 0, 65537, 458752, 1, 131073, 458752, 2, 2, 458752, 0, 65538, 458752, 1, 131074, 458752, 2, 3, 458752, 0, 65539, 458752, 1, 131075, 458752, 2, 4, 458752, 0, 65540, 458752, 1, 131076, 458752, 2, 5, 458752, 0, 65541, 458752, 1, 131077, 458752, 2, 6, 458752, 0, 65542, 458752, 1, 131078, 458752, 2, 7, 458752, 0, 65543, 458752, 1, 131079, 458752, 2, 8, 458752, 0, 65544, 458752, 1, 131080, 458752, 2, 9, 458752, 0, 65545, 458752, 1, 131081, 458752, 2, 10, 458752, 0, 65546, 458752, 1, 131082, 458752, 2, 11, 458752, 0, 65547, 458752, 1, 131083, 458752, 2, 12, 458752, 0, 65548, 458752, 1, 131084, 458752, 2, 13, 458752, 0, 65549, 458752, 1, 131085, 458752, 2, 14, 458752, 0, 65550, 458752, 1, 131086, 458752, 2, 15, 458752, 0, 65551, 458752, 1, 131087, 458752, 2, 16, 458752, 0, 65552, 458752, 1, 131088, 458752, 2, 17, 458752, 0, 65553, 458752, 1, 131089, 458752, 2, 18, 458752, 0, 65554, 458752, 1, 131090, 458752, 2)
@@ -423,3 +424,5 @@ collision_mask = 29
 [node name="Objects" type="Node2D" parent="."]
 
 [node name="Traps" type="Node2D" parent="."]
+
+[node name="UILayer" parent="." instance=ExtResource("10_vcx5n")]
